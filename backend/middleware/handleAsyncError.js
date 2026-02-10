@@ -1,3 +1,3 @@
 export default (myErrorFun) => (req, res, next) => {
-    prosmise.resolve(myErrorFun(req, res, next)).catch(next);
+    Promise.resolve(myErrorFun(req, res, next)).catch(next);
 }
